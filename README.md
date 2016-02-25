@@ -28,7 +28,7 @@ Autocomplete domain part of e-mail after type any chars after `@`.
 
 4. Init with className and domains list:
   ```javascript
-`EmailHint.init(
+EmailHint.init(
   "emailHint", // className
   [
     "gmail.com",

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<title>Email hint</title>
+	<style>
+		input,
+		.emailHint-measure,
+		.emailHint-hint {
+		    font-family: "Segoe UI", sans-serif;
+		    font-size: 100%;
+		    border: 1px solid gray;
+		    padding: .2em;
+		}
+		.emailHint {
+		    position: relative;
+		}
+		.emailHint-measure {
+		    padding-right: 0;
+		    border-right: 0;
+		    position: absolute;
+		    top: -999em;
+		    visibility: hidden;
+		}
+		.emailHint-hint {
+		    color: gray;
+		    position: absolute;
+		    padding-left: 0;
+		    border-left: 0;
+		    border-color: transparent;
+		}
+	</style>
+</head>
+<body>
+	<form>
+	    <p>
+	        <label for="email">E-mail</label>
+	        <br>
+	        <span class="emailHint">
+	            <input id="email" name="email" type="text" value="email@">
+	            <span class="emailHint-hint"></span>
+	        </span>    
+	    </p>
+	    
+	    <p>
+	        <label for="password">Password</label>
+	        <br>
+	        <input id="password" type="password">
+	    </p>
+	    
+	    <p>
+	        <button>Send</button>
+	    </p>    
+	</form>
+	<script src="emailHint.js"></script>
+	<script>
+
+	EmailHint.init(
+		"emailHint", // className
+		[
+			"seznam.cz",
+		    "gmail.com",
+		    "hotmail.com",
+		    "centrum.cz",
+		    "email.cz",
+		    "atlas.cz",
+		    "azet.sk",
+		    "volny.cz",
+		    "centrum.sk",
+		    "post.cz",
+		    "outlook.com",
+		    "zoznam.sk",
+		    "yahoo.com",
+		    "tiscali.cz",
+		    "post.sk",
+		    "quick.cz",
+		    "aol.com",
+		    "pobox.sk",
+		    "szm.sk",
+		    "atlas.sk"
+	    ]
+	);
+	</script>
+</body>
+</html>

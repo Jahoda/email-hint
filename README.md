@@ -7,10 +7,10 @@ Autocomplete domain part of e-mail after type any chars after `@`.
 ## Usage
 
 Wrap HTML `<input>` element with:
-  `<span class="emailHint">
+  ``<span class="emailHint">
     <input name="email">
     <span class="emailHint-hint"></span>
-  </span>`
+  </span>``
   
 Add CSS class selectors `.emailHint-measure` and `.emailHint-hint` to `input` declaration:
   `input,

@@ -2,7 +2,7 @@
 
 Autocomplete domain part of e-mail after type any chars after `@`.
 
-(http://jecas.cz/files/napovidani-emailu/napoveda-email.gif)
+![EmailHint](http://jecas.cz/files/napovidani-emailu/napoveda-email.gif)
 
 ## Usage
 

@@ -8,7 +8,7 @@ Autocomplete domain part of e-mail after type any chars after `@`.
 
 1. Wrap HTML `<input>` element with:
   
-  ```
+  ```html
   <span class="emailHint">
     <input name="email">
     <span class="emailHint-hint"></span>
@@ -16,7 +16,7 @@ Autocomplete domain part of e-mail after type any chars after `@`.
   ```
   
 2. Add CSS class selectors `.emailHint-measure` and `.emailHint-hint` to `input` declaration:
-  ```
+  ```css
   input,
   .emailHint-measure,
   .emailHint-hint {
@@ -27,7 +27,7 @@ Autocomplete domain part of e-mail after type any chars after `@`.
 3. Link `emailHint.js`.
 
 4. Init with className and domains list:
-  ```
+  ```javascript
 `EmailHint.init(
   "emailHint", // className
   [

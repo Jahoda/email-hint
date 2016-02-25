@@ -28,13 +28,13 @@ Autocomplete domain part of e-mail after type any chars after `@`.
 
 4. Init with className and domains list:
   ```javascript
-EmailHint.init(
-  "emailHint", // className
-  [
-    "gmail.com",
-    /* … */
-  ]
-);
+  EmailHint.init(
+    "emailHint", // className
+    [
+      "gmail.com",
+      /* … */
+    ]
+  );
   ```
 
 (http://jecas.cz/napovidani-emailu)

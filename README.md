@@ -6,28 +6,35 @@ Autocomplete domain part of e-mail after type any chars after `@`.
 
 ## Usage
 
-Wrap HTML `<input>` element with:
-  ``<span class="emailHint">
+1. Wrap HTML `<input>` element with:
+  
+  ```
+  <span class="emailHint">
     <input name="email">
     <span class="emailHint-hint"></span>
-  </span>``
+  </span>
+  ```
   
-Add CSS class selectors `.emailHint-measure` and `.emailHint-hint` to `input` declaration:
-  `input,
+2. Add CSS class selectors `.emailHint-measure` and `.emailHint-hint` to `input` declaration:
+  ```
+  input,
   .emailHint-measure,
   .emailHint-hint {
-      /* some styles */
-  }`
-  
-Link `emailHint.js`.
+    /* some styles */
+  }
+  ```  
 
-Init with className and domains list:
-  `EmailHint.init(
-    "emailHint", // className
-    [
-      "gmail.com",
-      /* … */
-    ]
-  );`
+3. Link `emailHint.js`.
+
+4. Init with className and domains list:
+  ```
+`EmailHint.init(
+  "emailHint", // className
+  [
+    "gmail.com",
+    /* … */
+  ]
+);
+  ```
 
 (http://jecas.cz/napovidani-emailu)
